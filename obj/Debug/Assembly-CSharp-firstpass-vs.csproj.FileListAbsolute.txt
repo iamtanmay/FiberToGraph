@@ -1,0 +1,11 @@
+E:\Apps\FiberToGraph\Temp\bin\Debug\Assembly-CSharp-firstpass.dll
+E:\Apps\FiberToGraph\Temp\bin\Debug\Assembly-CSharp-firstpass.pdb
+E:\Apps\FiberToGraph\Temp\bin\Debug\UnityEditor.dll
+E:\Apps\FiberToGraph\Temp\bin\Debug\UnityEngine.dll
+E:\Apps\FiberToGraph\Temp\bin\Debug\Mono.Cecil.dll
+E:\Apps\FiberToGraph\Temp\bin\Debug\nunit.framework.dll
+E:\Apps\FiberToGraph\Temp\bin\Debug\Unity.DataContract.dll
+E:\Apps\FiberToGraph\Temp\bin\Debug\ICSharpCode.NRefactory.dll
+E:\Apps\FiberToGraph\obj\Debug\Assembly-CSharp-firstpass-vs.csprojResolveAssemblyReference.cache
+E:\Apps\FiberToGraph\obj\Debug\Assembly-CSharp-firstpass.dll
+E:\Apps\FiberToGraph\obj\Debug\Assembly-CSharp-firstpass.pdb

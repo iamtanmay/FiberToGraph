@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+	<Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+	<Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+	<ProductVersion>10.0.20506</ProductVersion>
+	<SchemaVersion>2.0</SchemaVersion>
+	<ProjectGuid>{6E6F88B1-9437-87C3-F0E0-6A83D993817B}</ProjectGuid>
+	<OutputType>Library</OutputType>
+	<AppDesignerFolder>Properties</AppDesignerFolder>
+	<RootNamespace></RootNamespace>
+	<AssemblyName>Assembly-CSharp</AssemblyName>
+	<TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+	<FileAlignment>512</FileAlignment>
+	<BaseDirectory>Assets</BaseDirectory>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+	<DebugSymbols>true</DebugSymbols>
+	<DebugType>full</DebugType>
+	<Optimize>false</Optimize>
+	<OutputPath>Temp\bin\Debug\</OutputPath>
+	<DefineConstants>DEBUG;TRACE;UNITY_STANDALONE_WIN;ENABLE_MICROPHONE;ENABLE_TEXTUREID_MAP;ENABLE_AUDIO_FMOD;UNITY_STANDALONE;ENABLE_MONO;ENABLE_SPRITES;ENABLE_TERRAIN;ENABLE_GENERICS;ENABLE_SUBSTANCE;INCLUDE_WP8SUPPORT;ENABLE_MOVIES;ENABLE_WWW;ENABLE_IMAGEEFFECTS;ENABLE_WEBCAM;INCLUDE_METROSUPPORT;RENDER_SOFTWARE_CURSOR;ENABLE_NETWORK;ENABLE_PHYSICS;ENABLE_CACHING;ENABLE_CLOTH;ENABLE_2D_PHYSICS;ENABLE_SHADOWS;ENABLE_AUDIO;ENABLE_NAVMESH_CARVING;ENABLE_DUCK_TYPING;ENABLE_SINGLE_INSTANCE_BUILD_SETTING;UNITY_4_3_4;UNITY_4_3;ENABLE_PROFILER;UNITY_EDITOR;UNITY_EDITOR_WIN;UNITY_TEAM_LICENSE</DefineConstants>
+	<ErrorReport>prompt</ErrorReport>
+	<WarningLevel>4</WarningLevel>
+	<NoWarn>0169</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+	<DebugType>pdbonly</DebugType>
+	<Optimize>true</Optimize>
+	<OutputPath>Temp\bin\Release\</OutputPath>
+	<DefineConstants>TRACE</DefineConstants>
+	<ErrorReport>prompt</ErrorReport>
+	<WarningLevel>4</WarningLevel>
+	<NoWarn>0169</NoWarn>
+  </PropertyGroup>
+  <ItemGroup>
+	<Reference Include="System" />
+    <Reference Include="System.XML" />
+	<Reference Include="System.Core" />
+	<Reference Include="System.Xml.Linq" />
+	<Reference Include="UnityEngine">
+	  <HintPath>E:/Programs/Unity 4.3.4f1/Editor/Data/Managed/UnityEngine.dll</HintPath>
+	</Reference>
+	<Reference Include="UnityEditor">
+	  <HintPath>E:/Programs/Unity 4.3.4f1/Editor/Data/Managed/UnityEditor.dll</HintPath>
+	</Reference>
+  </ItemGroup>
+  <ItemGroup>
+     <Compile Include="Assets\Scripts\Poly2Tri\P2T.cs" />
+     <Compile Include="Assets\Scripts\Poly2Tri\Polygon\Polygon.cs" />
+     <Compile Include="Assets\Scripts\Poly2Tri\Polygon\PolygonPoint.cs" />
+     <Compile Include="Assets\Scripts\Poly2Tri\Polygon\PolygonSet.cs" />
+     <Compile Include="Assets\Scripts\Poly2Tri\Triangulation\Delaunay\DelaunayTriangle.cs" />
+     <Compile Include="Assets\Scripts\Poly2Tri\Triangulation\Delaunay\Sweep\AdvancingFront.cs" />
+     <Compile Include="Assets\Scripts\Poly2Tri\Triangulation\Delaunay\Sweep\AdvancingFrontNode.cs" />
+     <Compile Include="Assets\Scripts\Poly2Tri\Triangulation\Delaunay\Sweep\DTSweep.cs" />
+     <Compile Include="Assets\Scripts\Poly2Tri\Triangulation\Delaunay\Sweep\DTSweepBasin.cs" />
+     <Compile Include="Assets\Scripts\Poly2Tri\Triangulation\Delaunay\Sweep\DTSweepConstraint.cs" />
+     <Compile Include="Assets\Scripts\Poly2Tri\Triangulation\Delaunay\Sweep\DTSweepContext.cs" />
+     <Compile Include="Assets\Scripts\Poly2Tri\Triangulation\Delaunay\Sweep\DTSweepDebugContext.cs" />
+     <Compile Include="Assets\Scripts\Poly2Tri\Triangulation\Delaunay\Sweep\DTSweepEdgeEvent.cs" />
+     <Compile Include="Assets\Scripts\Poly2Tri\Triangulation\Delaunay\Sweep\DTSweepPointComparator.cs" />
+     <Compile Include="Assets\Scripts\Poly2Tri\Triangulation\Delaunay\Sweep\PointOnEdgeException.cs" />
+     <Compile Include="Assets\Scripts\Poly2Tri\Triangulation\ITriangulatable.cs" />
+     <Compile Include="Assets\Scripts\Poly2Tri\Triangulation\Orientation.cs" />
+     <Compile Include="Assets\Scripts\Poly2Tri\Triangulation\Sets\ConstrainedPointSet.cs" />
+     <Compile Include="Assets\Scripts\Poly2Tri\Triangulation\Sets\PointSet.cs" />
+     <Compile Include="Assets\Scripts\Poly2Tri\Triangulation\TriangulationAlgorithm.cs" />
+     <Compile Include="Assets\Scripts\Poly2Tri\Triangulation\TriangulationConstraint.cs" />
+     <Compile Include="Assets\Scripts\Poly2Tri\Triangulation\TriangulationContext.cs" />
+     <Compile Include="Assets\Scripts\Poly2Tri\Triangulation\TriangulationDebugContext.cs" />
+     <Compile Include="Assets\Scripts\Poly2Tri\Triangulation\TriangulationMode.cs" />
+     <Compile Include="Assets\Scripts\Poly2Tri\Triangulation\TriangulationPoint.cs" />
+     <Compile Include="Assets\Scripts\Poly2Tri\Triangulation\TriangulationUtil.cs" />
+     <Compile Include="Assets\Scripts\Poly2Tri\Triangulation\Util\PointGenerator.cs" />
+     <Compile Include="Assets\Scripts\Poly2Tri\Triangulation\Util\PolygonGenerator.cs" />
+     <Compile Include="Assets\Scripts\Poly2Tri\Utility\FixedArray3.cs" />
+     <Compile Include="Assets\Scripts\Poly2Tri\Utility\FixedBitArray3.cs" />
+     <Compile Include="Assets\Scripts\Processing\Graph.cs" />
+     <Compile Include="Assets\Scripts\Processing\ImagePipeline.cs" />
+     <Compile Include="Assets\Scripts\Processing\Shapes.cs" />
+     <Compile Include="Assets\Scripts\Processing\Triangulation.cs" />
+     <Compile Include="Assets\Scripts\Processing\Utilities.cs" />
+     <Compile Include="Assets\Scripts\Triangle\Behavior.cs" />
+     <Compile Include="Assets\Scripts\Triangle\Enums.cs" />
+     <Compile Include="Assets\Scripts\Triangle\Geometry\Contour.cs" />
+     <Compile Include="Assets\Scripts\Triangle\Geometry\Edge.cs" />
+     <Compile Include="Assets\Scripts\Triangle\Geometry\ExtensionMethods.cs" />
+     <Compile Include="Assets\Scripts\Triangle\Geometry\IEdge.cs" />
+     <Compile Include="Assets\Scripts\Triangle\Geometry\IPolygon.cs" />
+     <Compile Include="Assets\Scripts\Triangle\Geometry\ISegment.cs" />
+     <Compile Include="Assets\Scripts\Triangle\Geometry\ITriangle.cs" />
+     <Compile Include="Assets\Scripts\Triangle\Geometry\Point.cs" />
+     <Compile Include="Assets\Scripts\Triangle\Geometry\Polygon.cs" />
+     <Compile Include="Assets\Scripts\Triangle\Geometry\Rectangle.cs" />
+     <Compile Include="Assets\Scripts\Triangle\Geometry\RegionPointer.cs" />
+     <Compile Include="Assets\Scripts\Triangle\Geometry\Segment.cs" />
+     <Compile Include="Assets\Scripts\Triangle\Geometry\Vertex.cs" />
+     <Compile Include="Assets\Scripts\Triangle\IO\DebugWriter.cs" />
+     <Compile Include="Assets\Scripts\Triangle\IO\FileProcessor.cs" />
+     <Compile Include="Assets\Scripts\Triangle\IO\IFileFormat.cs" />
+     <Compile Include="Assets\Scripts\Triangle\IO\IMeshFormat.cs" />
+     <Compile Include="Assets\Scripts\Triangle\IO\IPolygonFormat.cs" />
+     <Compile Include="Assets\Scripts\Triangle\IO\InputTriangle.cs" />
+     <Compile Include="Assets\Scripts\Triangle\IO\TriangleFormat.cs" />
+     <Compile Include="Assets\Scripts\Triangle\IO\TriangleReader.cs" />
+     <Compile Include="Assets\Scripts\Triangle\IO\TriangleWriter.cs" />
+     <Compile Include="Assets\Scripts\Triangle\IPredicates.cs" />
+     <Compile Include="Assets\Scripts\Triangle\Log.cs" />
+     <Compile Include="Assets\Scripts\Triangle\Logging\ILog.cs" />
+     <Compile Include="Assets\Scripts\Triangle\Logging\ILogItem.cs" />
+     <Compile Include="Assets\Scripts\Triangle\Logging\LogItem.cs" />
+     <Compile Include="Assets\Scripts\Triangle\Mesh.cs" />
+     <Compile Include="Assets\Scripts\Triangle\MeshValidator.cs" />
+     <Compile Include="Assets\Scripts\Triangle\Meshing\Algorithm\Dwyer.cs" />
+     <Compile Include="Assets\Scripts\Triangle\Meshing\Algorithm\Incremental.cs" />
+     <Compile Include="Assets\Scripts\Triangle\Meshing\Algorithm\SweepLine.cs" />
+     <Compile Include="Assets\Scripts\Triangle\Meshing\ConstraintMesher.cs" />
+     <Compile Include="Assets\Scripts\Triangle\Meshing\ConstraintOptions.cs" />
+     <Compile Include="Assets\Scripts\Triangle\Meshing\Converter.cs" />
+     <Compile Include="Assets\Scripts\Triangle\Meshing\Data\BadSubseg.cs" />
+     <Compile Include="Assets\Scripts\Triangle\Meshing\Data\BadTriQueue.cs" />
+     <Compile Include="Assets\Scripts\Triangle\Meshing\Data\BadTriangle.cs" />
+     <Compile Include="Assets\Scripts\Triangle\Meshing\GenericMesher.cs" />
+     <Compile Include="Assets\Scripts\Triangle\Meshing\IConstraintMesher.cs" />
+     <Compile Include="Assets\Scripts\Triangle\Meshing\IMesh.cs" />
+     <Compile Include="Assets\Scripts\Triangle\Meshing\IQualityMesher.cs" />
+     <Compile Include="Assets\Scripts\Triangle\Meshing\ITriangulator.cs" />
+     <Compile Include="Assets\Scripts\Triangle\Meshing\Iterators\EdgeIterator.cs" />
+     <Compile Include="Assets\Scripts\Triangle\Meshing\Iterators\RegionIterator.cs" />
+     <Compile Include="Assets\Scripts\Triangle\Meshing\QualityMesher.cs" />
+     <Compile Include="Assets\Scripts\Triangle\Meshing\QualityOptions.cs" />
+     <Compile Include="Assets\Scripts\Triangle\NewLocation.cs" />
+     <Compile Include="Assets\Scripts\Triangle\RobustPredicates.cs" />
+     <Compile Include="Assets\Scripts\Triangle\Sampler.cs" />
+     <Compile Include="Assets\Scripts\Triangle\Smoothing\ISmoother.cs" />
+     <Compile Include="Assets\Scripts\Triangle\Smoothing\SimpleSmoother.cs" />
+     <Compile Include="Assets\Scripts\Triangle\Smoothing\VoronoiFactory.cs" />
+     <Compile Include="Assets\Scripts\Triangle\Tools\AdjacencyMatrix.cs" />
+     <Compile Include="Assets\Scripts\Triangle\Tools\CuthillMcKee.cs" />
+     <Compile Include="Assets\Scripts\Triangle\Tools\Interpolation.cs" />
+     <Compile Include="Assets\Scripts\Triangle\Tools\IntersectionHelper.cs" />
+     <Compile Include="Assets\Scripts\Triangle\Tools\PointSorter.cs" />
+     <Compile Include="Assets\Scripts\Triangle\Tools\PolygonValidator.cs" />
+     <Compile Include="Assets\Scripts\Triangle\Tools\QualityMeasure.cs" />
+     <Compile Include="Assets\Scripts\Triangle\Tools\Statistic.cs" />
+     <Compile Include="Assets\Scripts\Triangle\Tools\TriangleQuadTree.cs" />
+     <Compile Include="Assets\Scripts\Triangle\Topology\DCEL\DcelMesh.cs" />
+     <Compile Include="Assets\Scripts\Triangle\Topology\DCEL\Face.cs" />
+     <Compile Include="Assets\Scripts\Triangle\Topology\DCEL\HalfEdge.cs" />
+     <Compile Include="Assets\Scripts\Triangle\Topology\DCEL\Vertex.cs" />
+     <Compile Include="Assets\Scripts\Triangle\Topology\Osub.cs" />
+     <Compile Include="Assets\Scripts\Triangle\Topology\Otri.cs" />
+     <Compile Include="Assets\Scripts\Triangle\Topology\SubSegment.cs" />
+     <Compile Include="Assets\Scripts\Triangle\Topology\Triangle.cs" />
+     <Compile Include="Assets\Scripts\Triangle\TriangleLocator.cs" />
+     <Compile Include="Assets\Scripts\Triangle\Voronoi\BoundedVoronoi.cs" />
+     <Compile Include="Assets\Scripts\Triangle\Voronoi\DefaultVoronoiFactory.cs" />
+     <Compile Include="Assets\Scripts\Triangle\Voronoi\IVoronoiFactory.cs" />
+     <Compile Include="Assets\Scripts\Triangle\Voronoi\Legacy\BoundedVoronoiLegacy.cs" />
+     <Compile Include="Assets\Scripts\Triangle\Voronoi\Legacy\IVoronoi.cs" />
+     <Compile Include="Assets\Scripts\Triangle\Voronoi\Legacy\SimpleVoronoi.cs" />
+     <Compile Include="Assets\Scripts\Triangle\Voronoi\Legacy\VoronoiRegion.cs" />
+     <Compile Include="Assets\Scripts\Triangle\Voronoi\StandardVoronoi.cs" />
+     <Compile Include="Assets\Scripts\Triangle\Voronoi\VoronoiBase.cs" />
+     <Compile Include="Assets\Scripts\etc\EnablePointSize.cs" />
+     <Compile Include="Assets\Scripts\etc\ExtendedFlyCam.cs" />
+     <Compile Include="Assets\Scripts\etc\JPGToVector3Array.cs" />
+     <Compile Include="Assets\Scripts\etc\ObjExporter.cs" />
+     <Compile Include="Assets\Scripts\etc\PointsToPolygon.cs" />
+     <Compile Include="Assets\Scripts\etc\Triangulator.cs" />
+     <Compile Include="Assets\Temp\Form1.cs" />
+     <Compile Include="Assets\Temp\Mesh.cs" />
+     <Compile Include="Assets\Temp\Random.cs" />
+     <Compile Include="Assets\Temp\Triangle.cs" />
+     <Compile Include="Assets\Temp\Vertex.cs" />
+     <None Include="Assets\Standard Assets\Standard Assets (Mobile)\Shaders\Particle Shaders\Mobile Multiply Culled.shader" />
+     <None Include="Assets\Standard Assets\Standard Assets (Mobile)\Shaders\Miscellaneous Shaders\Mobile Background.shader" />
+     <None Include="Assets\Standard Assets\Standard Assets (Mobile)\Shaders\Vertex Colored Shaders\Mobile Transparent Vertex Color.shader" />
+     <None Include="Assets\Standard Assets\Standard Assets (Mobile)\Shaders\Miscellaneous Shaders\Mobile Detail.shader" />
+     <None Include="Assets\Standard Assets\Standard Assets (Mobile)\Shaders\Lightmap Shaders (Legacy)\Mobile Lightmap Reflective.shader" />
+     <None Include="Assets\Standard Assets\Standard Assets (Mobile)\Shaders\Particle Shaders\Mobile Particles Additive Culled.shader" />
+     <None Include="Assets\Resources\Shaders\VertexColor.shader" />
+     <None Include="Assets\Standard Assets\Standard Assets (Mobile)\Shaders\Vertex Colored Shaders\Mobile Vertex Colored.shader" />
+     <None Include="Assets\Standard Assets\Standard Assets (Mobile)\Shaders\Lightmap Shaders (Legacy)\Mobile Lightmap Only.shader" />
+     <None Include="Assets\Standard Assets\Standard Assets (Mobile)\Shaders\Lightmap Shaders (Legacy)\Mobile Lightmap AlphaTest.shader" />
+ <Reference Include="Assembly-UnityScript-firstpass">
+ <HintPath>Library\ScriptAssemblies\Assembly-UnityScript-firstpass.dll</HintPath>
+ </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="Assembly-CSharp-firstpass-vs.csproj">
+      <Project>{2A61D81C-D706-8B63-646A-D6E9383AA652}</Project>      <Name>Assembly-CSharp-firstpass-vs</Name>    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+	   Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  
+</Project>
